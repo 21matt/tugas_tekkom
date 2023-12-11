@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    fra
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mattheus Yaku</title>
+    <link rel="stylesheet" href="files.css">
+</head>
+<body>
+    <header class="header">
+        About Me
+    </header>
+    
+    <section id="foto">
+        <img src="cat.jpg"  width="200" height="300" alt="" class="center">
+    </section>
+    <section id="tentang-saya">
+        <h1>Mattheus Yaku</h1>
+        <p><b>Instagram</b> : @matt_21</p>
+        <p><b>Papua, Indonesia</b></p>
+        <p><b>Universitas Kristen Duta Wacana</b></p>
+    </section>
+    <section id="keterampilan">
+        Skillset
+        <ol>
+            <li>C++</li>
+            <li>Python</li>
+            <li>HTML</li>
+        </ol>
+    </section>
+
+    <button id="tombolGantiWarna" onclick="gantiWarnaRandom()">Ganti Warna</button>
+
+    <footer class="footer">
+        Thank you for visiting my personal webpage
+    </footer>
+
+    <script>
+        const bodyElement = document.body;
+
+        function gantiWarnaRandom() {
+            const warnaList = ["#ff0000", "#0000ff", "#00ff00", "#ffff00", "#800080", "#ffa500", "ffffff"];
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+    </script>
+</body>
+</html>
